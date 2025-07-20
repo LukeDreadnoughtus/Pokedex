@@ -1,0 +1,49 @@
+.background_picture{
+    background-color: #0A222C;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+    border: lightblue 2px solid;
+    
+    
+}
+
+
+/* Pfeile */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    user-select: none;
+    color: #071820;
+  }
+  .arrow-left {
+    left: 10px;
+  }
+  .arrow-right {
+    right: 10px;
+  }
+
+
+  .image-name {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    color: white;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }

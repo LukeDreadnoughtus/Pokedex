@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "test",
+			"path": "."
+		},
+		{
+			"name": "Pacifico",
+			"path": "../../../Downloads/Pacifico"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "test"
+	}
+}

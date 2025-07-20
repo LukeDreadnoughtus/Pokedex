@@ -1,0 +1,23 @@
+ @font-face {
+    font-family: Pacifico; 
+    src: url(../Pacifico/Pacifico-Regular.ttf);
+
+}
+
+
+h2{
+    font-family: Pacifico; 
+    font-size: 180%;
+} 
+
+
+@media( max-width: 800px){
+    h2{
+        font-family: Pacifico; 
+        font-size: 130%;
+    } 
+    
+
+}
+
+

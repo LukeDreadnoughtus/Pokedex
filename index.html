@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body onload="loadPokemon()">
+ 
+  <div id="loader-overlay">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Lädt..." id="loader-spinner">
+  </div>
+
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Pokémon suchen..."
+    oninput="filterPokemon()"
+  />
+
+ 
+  <div class="pokedex-container" id="pokedex"></div>
+  <button id="loadMoreBtn" onclick="loadPokemon()">Mehr laden</button>
+
+  
+  <div id="modal" class="modal hidden" onclick="hideModal(event)">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

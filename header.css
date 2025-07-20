@@ -1,0 +1,59 @@
+.burger-menu{
+    display: none;
+}
+
+.headimg {
+    content:url(./img/Fotogram_Logo.svg);
+    
+    width: 24%;
+    
+
+ }
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 130px;
+    box-shadow: 0px 1px 10px #c2c0c0;
+
+    padding: 0 4%;
+    background-color: #0A222C;
+   
+    
+
+   
+}
+
+
+header img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+@media( max-width: 800px){
+    header{
+      
+        
+        height: 80px;
+      
+       
+    }
+
+}
+
+
+@media( max-width: 400px){
+    header{
+      
+        
+        height: 40px;
+      
+       
+    }
+
+}
