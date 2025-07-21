@@ -1,23 +1,15 @@
  @font-face {
-    font-family: Pacifico; 
-    src: url(../Pacifico/Pacifico-Regular.ttf);
+    font-family: Raleway; 
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
 
 }
 
 
-h2{
-    font-family: Pacifico; 
-    font-size: 180%;
+h1{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif; 
+    
 } 
 
 
-@media( max-width: 800px){
-    h2{
-        font-family: Pacifico; 
-        font-size: 130%;
-    } 
-    
-
-}
 
 

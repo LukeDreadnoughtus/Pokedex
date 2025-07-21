@@ -5,30 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pokedex</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="fonts.css" />
 </head>
 <body onload="loadPokemon()">
+
+  <header class="header">
+  <h1 style="color: white; align-self: center;">Pokédex</h1>
+  <!-- Du kannst hier z. B. ein Logo, Suchfeld oder Menü ergänzen -->
+     <input
+    type="text"
+    id="searchInput"
+    placeholder="Pokémon suchen..."
+    oninput="filterPokemon()"
+  />
+</header>
+
+  
  
   <div id="loader-overlay">
     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Lädt..." id="loader-spinner">
   </div>
 
 
-  <input
-    type="text"
-    id="searchInput"
-    placeholder="Pokémon suchen..."
-    oninput="filterPokemon()"
-  />
+
 
  
+      
   <div class="pokedex-container" id="pokedex"></div>
   <button id="loadMoreBtn" onclick="loadPokemon()">Mehr laden</button>
+
+  
+    
 
   
   <div id="modal" class="modal hidden" onclick="hideModal(event)">
     <div class="modal-content" id="modalContent"></div>
   </div>
+  <main class="main-content">
+  </main>  
+
+  <footer class="footer">
+  <p style="color: white; align-self: center;">© 2025 Pokédex Project</p>
+</footer>
+
 
   <script src="script.js"></script>
+  <script src="templates.js"></script>
 </body>
 </html>

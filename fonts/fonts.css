@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Raleway; 
+    src: url(../../Assets/fonts/Raleway-VariableFont_wght.ttf);
+
+}
+
+
+*{
+    font-family: Raleway; 
+}

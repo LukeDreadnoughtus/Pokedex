@@ -1,14 +1,27 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background: #f0f0f0;
   margin: 0;
   padding: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #071820;
 }
 
 .pokedex-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
+  padding: 16px;
 }
 
 .pokemon-card {
@@ -20,6 +33,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 1px 10px #c2c0c0;
 }
 
 .pokemon-card:hover {
@@ -27,7 +41,7 @@ body {
 }
 
 .card-header {
-  background-color: #000;
+  background-color:  #0A222C;
   padding: 8px;
   font-weight: bold;
   text-align: center;
@@ -45,7 +59,7 @@ body {
 }
 
 .card-footer {
-  background-color: #000;
+  background-color:  #0A222C;
   padding: 6px;
   display: flex;
   justify-content: center;
@@ -94,7 +108,7 @@ button#loadMoreBtn {
   margin: 30px auto;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ff1e1e;
+  background-color: #0032f9;
   color: white;
   border: none;
   border-radius: 8px;
@@ -120,7 +134,7 @@ button#loadMoreBtn {
 }
 
 .modal-content {
-  background: white;
+  background:  #071820;
   color: black;
   padding: 0; 
   border-radius: 12px;
@@ -155,7 +169,6 @@ button#loadMoreBtn {
   display: block;
   width: 100%;
   max-width: 400px;
-  margin: 0 auto 20px auto;
   padding: 10px;
   font-size: 16px;
   border-radius: 8px;
@@ -193,7 +206,8 @@ button#loadMoreBtn {
   width: 100%;
   margin: 0; 
   padding: 0;
-  border-top: 1px solid #ccc;
+ 
+  box-shadow: 0px 1px 10px #c2c0c0;
 }
 
 .modal-tab {
@@ -204,19 +218,19 @@ button#loadMoreBtn {
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
-
+  background-color: #5b8296;
 
   
   text-align: center;
 }
 
 .modal-tab.active {
-  background: #ff1e1e;
+  background: #0032f9;
   color: white;
 }
 
 .modal-tab.active {
-  background: #ff1e1e;
+  background: #0032f9;
   color: white;
 }
 
@@ -232,9 +246,15 @@ button#loadMoreBtn {
   flex-wrap: wrap;
 }
 
+.evo-card:hover {
+  transform: scale(1.05);
+}
+
 .evo-card {
   text-align: center;
   font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 .evo-card img {
   width: 80px;
@@ -250,7 +270,7 @@ button#loadMoreBtn {
 }
 
 .modal-pokemon-card .card-footer {
-  background-color: #000;
+  background-color:  #0A222C;
   display: flex;
   justify-content: center;
   gap: 6px;
@@ -296,6 +316,15 @@ button#loadMoreBtn {
 #modal-main p,
 #modal-stats p {
   padding-left: 10px;
+  color: white;
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
+body.no-scroll {
+  overflow: hidden;
+}
