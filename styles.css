@@ -328,3 +328,11 @@ button#loadMoreBtn {
 body.no-scroll {
   overflow: hidden;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+  position: fixed;
+  width: 100%;
+}
